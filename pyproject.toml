@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unforget"
+version = "0.1.0"
+description = "A lightweight BYOK shell command suggestion utility."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML>=6.0.1",
+  "rich>=13.7.0",
+  "litellm>=1.45.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+]
+validation = [
+  "pydantic>=2.8.0",
+]
+
+[project.scripts]
+unforget = "unforget.cli:main"
+
+[tool.setuptools]
+packages = ["unforget", "unforget.core"]
+
+[tool.setuptools.package-data]
+unforget = ["integrations/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

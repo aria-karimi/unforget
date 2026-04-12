@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+build/
+dist/
+*.egg-info/
+
+.venv/
+venv/
+env/
+
+.vscode/
+.idea/
+.DS_Store
+
+.env
+*.log
+unforget_stdout.log
+
+# Prevent accidental commit of local copied config with keys
+.config/unforget/config.yaml
+tools/local/
