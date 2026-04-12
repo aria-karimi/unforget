@@ -8,11 +8,34 @@ version = "0.1.0"
 description = "A lightweight BYOK shell command suggestion utility."
 readme = "README.md"
 requires-python = ">=3.10"
+authors = [
+  { name = "Aria Karimi" },
+]
+license = { text = "MIT" }
+keywords = ["cli", "shell", "llm", "byok", "bash", "zsh", "fish", "productivity", "security"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: User Interfaces",
+  "Topic :: Utilities",
+]
 dependencies = [
   "PyYAML>=6.0.1",
   "rich>=13.7.0",
   "litellm>=1.45.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/aria-karimi/unforget"
+Source = "https://github.com/aria-karimi/unforget"
+Issues = "https://github.com/aria-karimi/unforget/issues"
 
 [project.optional-dependencies]
 dev = [
