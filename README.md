@@ -2,19 +2,33 @@
 
 `unforget` is a lightweight BYOK shell assistant that suggests commands using local terminal context (filesystem, shell env, recent output/history) and your chosen LLM provider.
 
-> **Distribution:** install from GitHub using `uv`.
+> **Distribution:** install from GitHub using `uv`, or install the PyPI package `unforget-cli`.
 
 ## Prerequisites
 - Python 3.10+
 - Bash, Zsh, or Fish shell
 - [uv](https://docs.astral.sh/uv/)
 
-## Install (GitHub + uv)
+## Install
 
-### Primary install command
+The installed command is always `unforget`.
+
+### GitHub + uv
 
 ```bash
 uv tool install "git+https://github.com/aria-karimi/unforget.git"
+```
+
+### PyPI
+
+```bash
+uv tool install unforget-cli
+```
+
+or:
+
+```bash
+pipx install unforget-cli
 ```
 
 ### Manage install
